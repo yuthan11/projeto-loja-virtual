@@ -96,3 +96,18 @@ programa {
              escreva("\nItem adicionado ao carrinho com sucesso!\n")
            } senao {
              escreva("\nQuantidade inválida ou estoque insuficiente!\n")
+           }
+         } senao {
+           escreva("\nProduto inválido!\n")
+         }
+
+
+
+
+
+
+
+
+         escreva("\nPressione ENTER para voltar ao menu...")
+         leia(tecla_pausa)
+         pare
