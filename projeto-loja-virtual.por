@@ -57,3 +57,13 @@ programa {
          limpa()
          escreva("--- CATÁLOGO DE PRODUTOS ---\n\n")
          escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
+         escreva("2. Boné Casual (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
+         escreva("3. Tênis de Corrida (Estoque: ", estoque_prod3, ") - R$ ", preco_prod3, "\n\n")
+         escreva("Escolha o produto que deseja adicionar: ")
+         leia(opcao_crud)
+         escreva("Digite a quantidade desejada: ")
+         leia(quantidade_temp)
+
+
+         se (opcao_crud == 1) {
+           se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
