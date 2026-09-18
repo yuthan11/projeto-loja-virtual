@@ -67,3 +67,18 @@ programa {
 
          se (opcao_crud == 1) {
            se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
+             qtd_carrinho_prod1 = qtd_carrinho_prod1 + quantidade_temp
+             estoque_prod1 = estoque_prod1 - quantidade_temp
+             escreva("\nItem adicionado ao carrinho com sucesso!\n")
+           } senao {
+             escreva("\nQuantidade inválida ou estoque insuficiente!\n")
+           }
+         } senao se (opcao_crud == 2) {
+           se (quantidade_temp > 0 e quantidade_temp <= estoque_prod2) {
+             qtd_carrinho_prod2 = qtd_carrinho_prod2 + quantidade_temp
+             estoque_prod2 = estoque_prod2 - quantidade_temp
+             escreva("\nItem adicionado ao carrinho com sucesso!\n")
+           } senao {
+             escreva("\nQuantidade inválida ou estoque insuficiente!\n")
+           }
+
