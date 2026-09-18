@@ -15,3 +15,17 @@ programa {
    real preco_prod1 = 150.0, preco_prod2 = 60.0, preco_prod3 = 250.0
    inteiro estoque_prod1 = 10, estoque_prod2 = 15, estoque_prod3 = 8
 
+
+   // Variáveis do CARRINHO DE COMPRAS
+   inteiro qtd_carrinho_prod1 = 0
+   inteiro qtd_carrinho_prod2 = 0
+   inteiro qtd_carrinho_prod3 = 0
+
+
+   // Variáveis auxiliares
+   inteiro quantidade_temp = 0
+   real valor_total_bruto = 0.0
+   real valor_desconto = 0.0
+   real valor_final = 0.0
+
+
