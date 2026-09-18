@@ -29,3 +29,11 @@ programa {
    real valor_final = 0.0
 
 
+   // ==========================================
+   // LAÇO PRINCIPAL DO SISTEMA
+   // ==========================================
+   enquanto (opcao_menu_principal != 0) {
+     limpa()
+     escreva("== BEM-VINDO À NOSSA LOJA VIRTUAL ==\n")
+     escreva("-----------------------------------------------------\n")
+     escreva("MENU PRINCIPAL\n\n")
