@@ -207,3 +207,13 @@ se (opcao_crud == 1) {
              estoque_prod2 = estoque_prod2 - quantidade_temp
              escreva("\nQuantidade atualizada!\n")
            } senao {
+
+
+             estoque_prod2 = estoque_prod2 - qtd_carrinho_prod2
+             escreva("\nQuantidade indisponível no estoque!\n")
+           }
+
+
+         } senao se (opcao_crud == 3) {
+           estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
+           se (quantidade_temp >= 0 e quantidade_temp <= estoque_prod3) {
