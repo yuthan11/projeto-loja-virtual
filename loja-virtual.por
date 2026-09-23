@@ -226,3 +226,14 @@ se (opcao_crud == 1) {
              estoque_prod3 = estoque_prod3 - qtd_carrinho_prod3
              escreva("\nQuantidade indisponível no estoque!\n")
            }
+         }
+
+
+         escreva("\nPressione ENTER para voltar ao menu...")
+         leia(tecla_pausa)
+         pare
+
+
+       // ====================================================
+       // D - DELETE (Remover Item do Carrinho)
+       // ====================================================
