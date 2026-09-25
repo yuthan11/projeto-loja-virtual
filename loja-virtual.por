@@ -284,12 +284,14 @@ se (opcao_crud == 1) {
          // Sai do laço e vai direto para a tela de pagamento abaixo
          pare
 
-         caso contrario:
+
+       caso contrario:
          escreva("\nOpção Inválida! Tente novamente.\n")
          escreva("Pressione ENTER para continuar...")
          leia(tecla_pausa)
      }
    }
+
 
    // ==========================================
    // TELA DE PAGAMENTO
@@ -301,3 +303,27 @@ se (opcao_crud == 1) {
    se (valor_total_bruto == 0) {
      escreva("Você não comprou nenhum produto. Obrigado por visitar nossa loja!\n")
 
+
+
+
+   } senao {
+     escreva("=== TELA DE PAGAMENTO ===\n\n")
+     escreva("Valor total da compra: R$ ", valor_total_bruto, "\n\n")
+     escreva("Formas de pagamento:\n")
+     escreva("1. À vista no Pix (10% de Desconto)\n")
+     escreva("2. Cartão de Crédito (Valor Integral)\n\n")
+     escreva("Escolha a forma de pagamento: ")
+     leia(opcao_pagamento)
+
+
+
+
+     se (opcao_pagamento == 1) {
+       valor_desconto = valor_total_bruto * 0.10
+       valor_final = valor_total_bruto - valor_desconto
+       escreva("\nDesconto aplicado: R$ ", valor_desconto, "\n")
+     } senao {
+       valor_desconto = 0.0
+       valor_final = valor_total_bruto
+       escreva("\nPagamento no cartão selecionado.\n")
+     }
