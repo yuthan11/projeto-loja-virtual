@@ -327,3 +327,16 @@ se (opcao_crud == 1) {
        valor_final = valor_total_bruto
        escreva("\nPagamento no cartão selecionado.\n")
      }
+
+
+     escreva("\nPressione ENTER para gerar a Nota Fiscal...")
+     leia(tecla_pausa)
+
+
+     // ==========================================
+     // NOTA FISCAL DETALHADA
+     // ==========================================
+     limpa()
+     escreva("==================================================\n")
+     escreva("           NOTA FISCAL - LOJA VIRTUAL             \n")
+     escreva("======================
