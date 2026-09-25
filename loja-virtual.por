@@ -262,3 +262,24 @@ se (opcao_crud == 1) {
            escreva("\nProduto removido do carrinho!\n")
          } senao se (opcao_crud == 2) {
            estoque_prod2 = estoque_prod2 + qtd_carrinho_prod2
+           qtd_carrinho_prod2 = 0
+
+
+           escreva("\nProduto removido do carrinho!\n")
+         } senao se (opcao_crud == 3) {
+           estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
+           qtd_carrinho_prod3 = 0
+           escreva("\nProduto removido do carrinho!\n")
+         } senao {
+           escreva("\nOpção inválida!\n")
+         }
+
+
+         escreva("\nPressione ENTER para voltar ao menu...")
+         leia(tecla_pausa)
+         pare
+
+
+       caso 0:
+         // Sai do laço e vai direto para a tela de pagamento abaixo
+         pare
