@@ -339,4 +339,28 @@ se (opcao_crud == 1) {
      limpa()
      escreva("==================================================\n")
      escreva("           NOTA FISCAL - LOJA VIRTUAL             \n")
-     escreva("======================
+     escreva("==================================================\n\n")
+     escreva("Itens comprados:\n")
+
+
+     se (qtd_carrinho_prod1 > 0) {
+       escreva("- ", qtd_carrinho_prod1, "x Camisa Esportiva = R$ ", (qtd_carrinho_prod1 * preco_prod1), "\n")
+     }
+     se (qtd_carrinho_prod2 > 0) {
+       escreva("- ", qtd_carrinho_prod2, "x Boné Casual = R$ ", (qtd_carrinho_prod2 * preco_prod2), "\n")
+     }
+     se (qtd_carrinho_prod3 > 0) {
+       escreva("- ", qtd_carrinho_prod3, "x Tênis de Corrida = R$ ", (qtd_carrinho_prod3 * preco_prod3), "\n")
+     }
+
+
+     escreva("--------------------------------------------------\n")
+     escreva("Valor Bruto: R$ ", valor_total_bruto, "\n")
+     escreva("Desconto:    R$ ", valor_desconto, "\n")
+     escreva("VALOR FINAL: R$ ", valor_final, "\n")
+     escreva("--------------------------------------------------\n")
+     escreva("Obrigado pela preferência e volte sempre!\n")
+   }
+ }
+}
+
