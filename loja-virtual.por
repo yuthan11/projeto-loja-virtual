@@ -253,3 +253,12 @@ se (opcao_crud == 1) {
          escreva("Escolha qual produto remover completamente: ")
          leia(opcao_crud)
 
+
+         se (opcao_crud == 1) {
+
+
+           estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
+           qtd_carrinho_prod1 = 0
+           escreva("\nProduto removido do carrinho!\n")
+         } senao se (opcao_crud == 2) {
+           estoque_prod2 = estoque_prod2 + qtd_carrinho_prod2
