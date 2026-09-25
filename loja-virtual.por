@@ -283,3 +283,21 @@ se (opcao_crud == 1) {
        caso 0:
          // Sai do laço e vai direto para a tela de pagamento abaixo
          pare
+
+         caso contrario:
+         escreva("\nOpção Inválida! Tente novamente.\n")
+         escreva("Pressione ENTER para continuar...")
+         leia(tecla_pausa)
+     }
+   }
+
+   // ==========================================
+   // TELA DE PAGAMENTO
+   // ==========================================
+   limpa()
+   valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + (qtd_carrinho_prod2 * preco_prod2) + (qtd_carrinho_prod3 * preco_prod3)
+
+
+   se (valor_total_bruto == 0) {
+     escreva("Você não comprou nenhum produto. Obrigado por visitar nossa loja!\n")
+
